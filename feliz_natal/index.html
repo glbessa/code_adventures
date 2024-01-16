@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feliz Natal!</title>
+    </head>
+    <body>
+        <style>
+            :root {
+                --color-1: red;
+                --color-2: gold;
+                --color-3: silver;
+                --color-4: blue;
+                --color-5: purple;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+
+            .tree {
+                position: relative;
+            }
+
+            .triangle {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 80px solid green;
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .t1 {
+                top: 20px;
+            }
+
+            .t2 {
+                top: -10px;
+            }
+
+            .t4 {
+                top: 50px;
+            }
+
+            .trunk {
+                width: 20px;
+                height: 40px;
+                background-color: #8B4513;
+                position: absolute;
+                top: 130px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .star {
+                width: 0;
+                height: 0;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-bottom: 50px solid gold;
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .ball {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: absolute;
+            }
+
+            .b1 {
+                top: 75px;
+                left: 40%;
+                background-color: var(--red);
+            }
+
+            .b2 {
+                top: 100px;
+                left: -20px;
+                transform: translateX(-30%);
+                background-color: var(--silver);
+            }
+
+            .b3 {
+                top: 10px;
+                left: 10px;
+                background-color: var(--blue);
+            }
+
+            .b4 {
+                top: 10px;
+                left: -10px;
+                transform: translateX(-50%);
+                background-color: var(--purple);
+            }
+
+            .b5 {
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: gold;
+            }
+        </style>
+        <div class="tree">
+            <div class="star"></div>
+            <div class="trunk"></div>
+            <div class="triangle t1"></div>
+            <div class="triangle t2"></div>
+            <div class="triangle t3"></div>
+            <div class="triangle t4"></div>
+            <div class="ball b1"></div>
+            <div class="ball b2"></div>
+            <div class="ball b3"></div>
+            <div class="ball b4"></div>
+            <div class="ball b5"></div>
+        </div>
+
+        <script>
+            const balls = document.querySelectorAll('.ball');
+
+            function changeColors() {
+                balls.forEach((ball, index) => {
+                    ball.style.setProperty('background-color', getComputedStyle(document.documentElement).getPropertyValue(`--color-${index + 1}`));
+                });
+            }
+
+            for (let i = 0; i <= 1000; i++) {
+                setTimeout(changeColors, 100 * i);
+            }
+        </script>
+        <!--
+        <canvas id="myCanvas"></canvas>
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            function draw() {
+
+            }
+            
+        </script>
+        -->
+    </body>
+</html>

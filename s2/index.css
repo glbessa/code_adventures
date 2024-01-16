@@ -1,0 +1,344 @@
+:root {
+    --core-heart-size: 50px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+@keyframes coreheartanimation {
+    0% {
+        
+    }
+    25% {
+        
+    }
+    50% {
+        
+    }
+    75% {
+        
+    }
+    100% {
+        background-color: rgb(183, 16, 16);
+    }
+}
+
+.coreheart {
+    height: 50px;
+    width: 50px;
+    /*background-color: #444;*/
+
+    position: fixed;
+
+    /*border: 1px solid black;*/
+    border-radius: 2px;
+
+    animation-name: coreheartanimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#ch1 {
+    top: calc(50% + 100px);
+    left: 50%;
+    animation-delay: 3s;
+}
+
+#ch2 {
+    top: calc(50% + 50px);
+    left: 50%;
+    animation-delay: 5s;
+}
+
+#ch3 {
+    top: calc(50% + 50px);
+    left: calc(50% + 50px);
+    animation-delay: 6s;
+}
+
+#ch4 {
+    top: calc(50% + 50px);
+    left: calc(50% - 50px);
+    animation-delay: 7s;
+}
+
+#ch5 {
+    top: calc(50%);
+    left: 50%;
+    animation-delay: 10s;
+}
+
+#ch6 {
+    top: calc(50%);
+    left: calc(50% + 100px);
+    animation-delay: 13s;
+}
+
+#ch7 {
+    top: calc(50%);
+    left: calc(50% + 50px);
+    animation-delay: 11s;
+}
+
+#ch8 {
+    top: calc(50%);
+    left: calc(50% - 50px);
+    animation-delay: 12s;
+}
+
+#ch9 {
+    top: calc(50%);
+    left: calc(50% - 100px);
+    animation-delay: 14s;
+}
+
+#ch10 {
+    top: calc(50% - 50px);
+    left: calc(50% + 150px);
+    animation-delay: 18s;
+}
+
+#ch11 {
+    top: calc(50% - 50px);
+    left: calc(50% + 100px);
+    animation-delay: 17s;
+}
+
+#ch12 {
+    top: calc(50% - 50px);
+    left: calc(50% + 50px);
+    animation-delay: 19s;
+}
+
+#ch13 {
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation-delay: 18s;
+}
+
+#ch14 {
+    top: calc(50% - 50px);
+    left: calc(50% - 100px);
+    animation-delay: 17s;
+}
+
+#ch15 {
+    top: calc(50% - 50px);
+    left: calc(50% - 150px);
+    animation-delay: 19s;
+}
+
+#ch16 {
+    top: calc(50% - 100px);
+    left: calc(50% + 100px);
+    animation-delay: 20s;
+}
+
+#ch17 {
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    animation-delay: 20s;
+}
+
+#ch18 {
+    top: calc(50%);
+    left: calc(50% + 150px);
+    animation-delay: 15s;
+}
+
+#ch19 {
+    top: calc(50%);
+    left: calc(50% - 150px);
+    animation-delay: 16s;
+}
+
+#ch20 {
+    top: calc(50% + 50px);
+    left: calc(50% + 100px);
+    animation-delay: 8s;
+}
+
+#ch21 {
+    top: calc(50% + 50px);
+    left: calc(50% - 100px);
+    animation-delay: 9s;
+}
+
+#ch22 {
+    top: calc(50% + 100px);
+    left: calc(50% - 50px);
+    animation-delay: 5s;
+}
+
+#ch23 {
+    top: calc(50% + 100px);
+    left: calc(50% + 50px);
+    animation-delay: 4s;
+}
+
+#ch24 {
+    top: calc(50% + 150px);
+    left: calc(50%);
+    animation-delay: 2s;
+}
+
+@keyframes fallingheartanimation {
+    0% {
+
+    }
+    10% {
+
+    }
+    20% {
+
+    }
+    30% {
+
+    }
+    40% {
+
+    }
+    50% {
+
+    }
+    60% {
+        
+    }
+    70% {
+
+    }
+    80% {
+
+    }
+    90% {
+        
+    }
+    100% {
+        transform: translateY(533px);
+    }
+}
+
+.fallingheart {
+    position: absolute;
+    top: -15px;
+    background-color: rgb(183, 16, 16);
+
+    height: 10px;
+    width: 10px;
+
+    transform: rotate(45deg);
+
+    animation-name: fallingheartanimation;
+    animation-duration: 1s;
+    animation-iteration-count: 18;
+}
+
+#fh1 {
+    left: 50%;
+    animation-delay: 9s;
+}
+
+#fh2 {
+    left: calc(50% + 25px);
+    animation-delay: 7.5s;
+}
+
+#fh3 {
+    left: calc(50% + 66px);
+    animation-delay: 6s;
+}
+
+#fh4 {
+    left: calc(50% + 98px);
+    animation-delay: 4.5s;
+}
+
+#fh5 {
+    left: calc(50% - 41px);
+    animation-delay: 3s;
+}
+
+#fh6 {
+    left: calc(50% - 23px);
+    animation-delay: 1.5s;
+    animation-duration: 1.2s;
+}
+
+#fh7 {
+    left: calc(50% - 87px);
+    animation-delay: 0s;
+}
+
+#fh8 {
+    left: calc(50% - 99px);
+    animation-delay: 9.3s;
+}
+
+#fh9 {
+    left: calc(50% + 12px);
+    animation-delay: 7.7s;
+}
+
+#fh10 {
+    left: calc(50% + 81px);
+    animation-delay: 6.5s;
+}
+
+#fh11 {
+    left: calc(50% + 105px);
+    animation-delay: 4.0s;
+}
+
+#fh12 {
+    left: calc(50% - 31px);
+    animation-delay: 3.7s;
+}
+
+#fh13 {
+    left: calc(50% - 47px);
+    animation-delay: 1.2s;
+}
+
+#fh14 {
+    left: calc(50% - 73px);
+    animation-delay: 0.3s;
+}
+
+#fh15 {
+    left: calc(50% - 87px);
+    animation-delay: 8.7s;
+}
+
+#fh16 {
+    left: calc(50% + 5px);
+    animation-delay: 6.8s;
+}
+
+#fh17 {
+    left: calc(50% + 73px);
+    animation-delay: 5.7s;
+}
+
+#fh18 {
+    left: calc(50% + 100px);
+    animation-delay: 4.9s;
+}
+
+#fh19 {
+    left: calc(50% - 27px);
+    animation-delay: 2.4s;
+}
+
+#fh20 {
+    left: calc(50% - 93px);
+    animation-delay: 0.8s;
+}
+
+#fh21 {
+    left: calc(50% - 44px);
+    animation-delay: 0.4s;
+}
