@@ -3,7 +3,7 @@
 }
 
 body {
-    height: 100%;
+    min-height: 926;
     width: 100%;
     margin: 0 auto;
     background-color: #333;
@@ -218,12 +218,12 @@ body {
         
     }
     100% {
-        transform: translateY(533px);
+        top: 58%;
     }
 }
 
 .fallingheart {
-    position: absolute;
+    position: fixed;
     top: -15px;
     background-color: rgb(183, 16, 16);
 
